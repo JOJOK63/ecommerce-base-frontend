@@ -1,0 +1,11 @@
+<img [src]="urlImg" alt="une image">
+
+@for (pkmn of pkmnList; track pkmn.id) {
+  <div>
+    <p>{{ pkmn.name }}</p>
+    <button (click)="previentLeParent(pkmn)">
+      Envoyer {{ pkmn.name }} au parent
+    </button>
+  </div>
+}
+
