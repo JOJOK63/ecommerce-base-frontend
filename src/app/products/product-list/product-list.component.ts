@@ -1,8 +1,9 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-product-list',
-  //eimports: [],
+  imports: [NgOptimizedImage],
   standalone: true,
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css'
