@@ -1,3 +1,21 @@
-<app-product-list (infoEvent)="montreMoi($event)"></app-product-list>
-<p>{{selectedPkmn?.id}} {{selectedPkmn?.name}}</p>
+
+
+<nav>
+  <a routerLink="">Home</a>
+  |
+  <a routerLink="product-list">Product list </a>
+  |
+  <a routerLink="product-details/1">Product details</a>
+  |
+  <a routerLink="new-product">Ajouter un produit</a>
+</nav>
+<!--@defer(on hover){-->
+<!--  <app-product-list (infoEvent)="montreMoi($event)"></app-product-list>-->
+<!--} @placeholder  {-->
+<!--  <p>Futur products</p>-->
+<!--} @loading (minimum  2s) {-->
+<!--  <p>Loading Products...</p>-->
+<!--}-->
+
+<!--<p>{{selectedPkmn?.id}} {{selectedPkmn?.name}}</p>-->
 <router-outlet />
